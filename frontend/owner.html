@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Dashboard | Bloom Kitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="brand">
+        <span class="brand-icon">❀</span> Bloom Kitchen
+    </a>
+    <button class="btn btn-secondary" onclick="logout()">Sign Out</button>
+</nav>
+
+<main class="wrap">
+
+    <header class="page-head">
+        <p class="eyebrow">OWNER WORKSPACE</p>
+        <h1>Dashboard</h1>
+        <p>Manage your menu, inventory, staff and orders.</p>
+    </header>
+
+    <section id="stats" class="stats"></section>
+
+    <div class="columns">
+
+        <section class="panel">
+            <h2 id="dishFormTitle">Add Menu Item</h2>
+
+            <form id="dishForm">
+                <input type="hidden" id="dishId">
+
+                <label for="dishName">Dish name</label>
+                <input id="dishName" placeholder="Dish name" required>
+
+                <label for="price">Price (₹)</label>
+                <input id="price" type="number" min="0.01" step="0.01" required>
+
+                <label for="image">Image URL</label>
+                <input id="image" type="url" placeholder="https://example.com/food.jpg">
+
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Describe your dish"></textarea>
+
+                <button class="btn" id="dishSubmit">Add Dish</button>
+                <button type="button" class="btn btn-secondary" id="cancelEdit" hidden>
+                    Cancel Edit
+                </button>
+            </form>
+
+            <h2 style="margin-top:25px">Current Menu</h2>
+            <div id="menuTable"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Daily Inventory</h2>
+            <p class="muted">Update available quantities for today.</p>
+            <div id="inventory"></div>
+        </section>
+
+    </div>
+
+    <div class="columns">
+
+        <section class="panel">
+            <h2>Register Staff</h2>
+
+            <form id="staffForm">
+                <input id="staffName" placeholder="Full name" required>
+                <input id="staffEmail" type="email" placeholder="Email address" required>
+                <input id="staffPhone" placeholder="Phone number">
+                <input id="staffPassword" type="password" placeholder="Password (minimum 8 characters)" minlength="8" required>
+
+                <select id="staffRole">
+                    <option value="chef">Chef</option>
+                    <option value="delivery">Delivery Person</option>
+                </select>
+
+                <button class="btn">Create Staff Account</button>
+            </form>
+
+            <h2 style="margin-top:25px">Staff Members</h2>
+            <div id="staffList"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Recent Orders</h2>
+            <div id="orders"></div>
+        </section>
+
+    </div>
+
+    <section class="panel">
+        <h2>Daily Failure Report</h2>
+        <div id="failureReport"></div>
+    </section>
+
+    <p id="ownerMessage" class="notice"></p>
+
+</main>
+
+<footer class="footer">
+    <p>Bloom Kitchen · Owner Workspace</p>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/owner.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu & Order | Bloom Kitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="brand">
+        <span class="brand-icon">❀</span> Bloom Kitchen
+    </a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="customer.html">Menu & Order</a>
+        <a href="login.html">Staff Login</a>
+    </div>
+</nav>
+
+<main class="wrap">
+    <header class="page-head">
+        <p class="eyebrow">FRESHLY PREPARED FOR YOU</p>
+        <h1>Our Speciality Cuisine</h1>
+        <p>Discover your favourite dishes and order something delicious.</p>
+    </header>
+
+    <div id="menu" class="menu-grid">
+        <p class="empty">Loading menu...</p>
+    </div>
+
+    <section class="panel chat">
+        <p class="eyebrow">YOUR PERSONAL ORDER ASSISTANT</p>
+        <h2>What would you like today?</h2>
+
+        <label for="customerName">Your name</label>
+        <input id="customerName" placeholder="Enter your name">
+
+        <div id="chatLog" class="chat-log" aria-live="polite">
+            <p class="bot">
+                Hello! Welcome to Bloom Kitchen. Tell me what you
+                would like to order. For example: I want 2 pizza.
+            </p>
+        </div>
+
+        <form id="chatForm">
+            <input id="chatInput" placeholder="Example: I want 2 pizza" required>
+            <button class="btn">Send →</button>
+        </form>
+
+        <div id="availability"></div>
+
+        <button id="checkout" class="btn" hidden>
+            Confirm Order
+        </button>
+
+        <section id="orderHistory" style="margin-top:25px">
+            <h2>Your Orders</h2>
+            <div id="tracking"></div>
+        </section>
+
+        <p id="customerMessage" class="notice"></p>
+    </section>
+</main>
+
+<footer class="footer">
+    <h2>❀ Bloom Kitchen</h2>
+    <p>Fresh Food • Happy People</p>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/customer.js"></script>
+</body>
+</html>

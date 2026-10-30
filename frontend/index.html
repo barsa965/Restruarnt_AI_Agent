@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Kitchen | Fresh Food, Happy People</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="brand">
+        <span class="brand-icon">❀</span>
+        <span>Bloom Kitchen<small>Fresh Food • Happy People</small></span>
+    </a>
+
+    <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="customer.html">Menu</a>
+        <a href="customer.html">Order</a>
+        <a href="login.html">Staff Login</a>
+    </div>
+
+    <a href="customer.html" class="btn">Order Now →</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="eyebrow">WELCOME TO BLOOM KITCHEN</p>
+
+        <h1>
+            Good Food<br>
+            Brings People<br>
+            <span>Together.</span>
+        </h1>
+
+        <p class="hero-description">
+            Fresh, wholesome meals made with love.
+            Discover delicious flavours and make every meal special.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="customer.html" class="btn">Order Now →</a>
+            <a href="customer.html" class="btn btn-outline">Explore Menu</a>
+        </div>
+
+        <div class="hero-features">
+            <div><span>❀</span><strong>Fresh Ingredients</strong><small>Quality food</small></div>
+            <div><span>♡</span><strong>Healthy Choices</strong><small>Made with care</small></div>
+            <div><span>♧</span><strong>Fast Service</strong><small>Reliable delivery</small></div>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=1000"
+             alt="Fresh healthy salad">
+        <div class="image-caption">Good Food<br>Good Mood ♡</div>
+    </div>
+</section>
+
+<section class="speciality-section" id="about">
+    <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT US</p>
+        <h2>Fresh Ingredients. Real Flavours.</h2>
+        <p>Thoughtfully prepared food for every occasion.</p>
+    </div>
+
+    <div class="speciality-grid">
+        <article class="speciality-card"><span>❀</span><h3>Fresh Ingredients</h3><p>Quality ingredients in every meal.</p></article>
+        <article class="speciality-card"><span>♡</span><h3>Healthy Choices</h3><p>Balanced meals made with care.</p></article>
+        <article class="speciality-card"><span>♧</span><h3>Fast Service</h3><p>Your food, delivered on time.</p></article>
+        <article class="speciality-card"><span>✧</span><h3>Safe & Hygienic</h3><p>Prepared with care and cleanliness.</p></article>
+    </div>
+</section>
+
+<section class="popular-section">
+    <div class="section-heading">
+        <p class="eyebrow">MADE WITH LOVE</p>
+        <h2>Our Popular Dishes</h2>
+        <p>Discover some delicious favourites.</p>
+    </div>
+
+    <div class="popular-grid">
+        <article class="popular-card">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Salad">
+            <div class="popular-info"><h3>Fresh Salad</h3><p>Fresh vegetables and wholesome goodness.</p><a href="customer.html">Order now →</a></div>
+        </article>
+
+        <article class="popular-card">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600" alt="Pasta">
+            <div class="popular-info"><h3>Creamy Pasta</h3><p>A delicious and comforting classic.</p><a href="customer.html">Order now →</a></div>
+        </article>
+
+        <article class="popular-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600" alt="Healthy bowl">
+            <div class="popular-info"><h3>Healthy Bowl</h3><p>Colourful, fresh and nutritious.</p><a href="customer.html">Order now →</a></div>
+        </article>
+
+        <article class="popular-card">
+            <img src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=600" alt="Smoothie">
+            <div class="popular-info"><h3>Berry Smoothie</h3><p>A refreshing fruity treat.</p><a href="customer.html">Order now →</a></div>
+        </article>
+    </div>
+
+    <div class="center-button">
+        <a href="customer.html" class="btn btn-outline">Explore Full Menu →</a>
+    </div>
+</section>
+
+<section class="testimonial">
+    <p class="eyebrow">KIND WORDS</p>
+    <h2>Customer Say About Us</h2>
+
+    <div class="testimonial-card">
+        <div class="testimonial-avatar">B</div>
+        <h3>Our Happy Customers</h3>
+        <div class="stars">★★★★★</div>
+        <p>Fresh food, lovely flavours and a wonderful experience. Every meal feels special.</p>
+    </div>
+</section>
+
+<section class="newsletter">
+    <h2>Join Our Newsletter</h2>
+    <p>Get updates about new dishes and special offers.</p>
+
+    <form id="newsletterForm">
+        <input type="email" placeholder="Enter your email address" required>
+        <button class="btn">Subscribe</button>
+    </form>
+
+    <p id="newsletterMessage"></p>
+</section>
+
+<footer class="footer">
+    <h2>❀ Bloom Kitchen</h2>
+    <p>Fresh Food • Happy People</p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="customer.html">Menu</a>
+        <a href="customer.html">Order</a>
+        <a href="login.html">Staff Login</a>
+    </div>
+
+    <p class="copyright">© 2026 Bloom Kitchen. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById("newsletterForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("newsletterMessage").textContent =
+        "Thank you for subscribing!";
+    this.reset();
+});
+</script>
+
+</body>
+</html>

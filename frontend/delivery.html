@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Dashboard | Bloom Kitchen</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="brand">
+        <span class="brand-icon">❀</span> Bloom Kitchen
+    </a>
+    <button class="btn btn-secondary" onclick="logout()">Sign Out</button>
+</nav>
+
+<main class="wrap">
+
+    <header class="page-head">
+        <p class="eyebrow">BLOOM KITCHEN · DELIVERY TEAM</p>
+        <h1>Delivery Dashboard</h1>
+        <p>View assigned orders and update delivery status.</p>
+    </header>
+
+    <div id="orders" class="cards">
+        <p class="empty">Loading assigned orders...</p>
+    </div>
+
+    <p id="deliveryMessage" class="notice"></p>
+
+</main>
+
+<footer class="footer">
+    <p>Bloom Kitchen · Delivery Team</p>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/delivery.js"></script>
+</body>
+</html>
